@@ -25,3 +25,7 @@ Daily Events Timetable for BA
 ## 支持中英文自动切换
 * 添加 EN / 中文
 * 支持手动切换
+
+##喜欢点Star | 禁止Fork
+
+* 可以提交issues
