@@ -91,9 +91,9 @@ function exeCmd() {
     // timeRow.html(timeRow.html() + '<td>英文</td>');
     var language = localStorage.getItem("language");
     if (language == "zh") {
-        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >EN</td>');
+        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >EN<br><font color="black">(597-Cat)</td>');
     } else {
-        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >中文</td>');
+        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >中文<br><font color="black">(597-Cat)</td>');
     }
 
 
@@ -179,32 +179,11 @@ function exeCmd() {
 
          if(trueChart[_day + '_' + _time].length > 1){
             var language = localStorage.getItem("language");
-            // if(language=="zh"){
-            //    eventStr = '<div id="tiger">剑齿虎</div>' + eventStr;
-            // } else{
-            //    eventStr = '<div id="tiger">Tigers</div>' + eventStr;   
-            // } 
-            if (_day == 3 & _time == 2 ||_day == 3 & _time == 3 ||_day == 3 & _time == 4||_day == 3 & _time == 5|| _day == 4) {
             if(language=="zh"){
                eventStr = '<div id="tiger">剑齿虎</div>' + eventStr;
             } else{
                eventStr = '<div id="tiger">Tigers</div>' + eventStr;   
             } 
-            }
-            else if (_day == 5 || _day == 6) {
-            if(language=="zh"){
-               eventStr = '<div id="tiger">藏兵</div>' + eventStr;
-            } else{
-               eventStr = '<div id="tiger">Shield</div>' + eventStr;   
-            } 
-            }
-            else if (_day == 1 || _day == 2 || _day == 3 & _time == 0|| _day == 3 & _time == 1) {
-            if(language=="zh"){
-               eventStr = '<div id="tiger">霜火</div>' + eventStr;
-            } else{
-               eventStr = '<div id="tiger">Frost</div>' + eventStr;   
-            } 
-            }
          }
 
          testTime = Math.floor(_testTime / 4);
@@ -445,7 +424,7 @@ var getEventDisplayName = function(eve){
           eventStr = '建造';
           break;
        case 'brutal':
-          eventStr = '原始';
+          eventStr = '原始<br><font color="red">藏兵';
           break;
        case 'clean':
           eventStr = '扫除';
@@ -476,7 +455,7 @@ var getEventDisplayName = function(eve){
             eventStr = 'Build';
             break;
          case 'brutal':
-            eventStr = 'Barb';
+            eventStr = 'Barb<br><font color="red">Shield';
             break;
          case 'clean':
             eventStr = 'Clean';
@@ -519,7 +498,7 @@ var getEventFullName = function(eve){
          eventStr = '全速建造';
          break;
       case 'brutal':
-         eventStr = '原始人战争';
+         eventStr = '原始人战争<br><font color="red">开启保护罩';
          break;
       case 'clean':
          eventStr = '大扫除';
@@ -550,7 +529,7 @@ var getEventFullName = function(eve){
          eventStr = 'FULLSPEED BUILD';
          break;
       case 'brutal':
-         eventStr = 'BARBARIAN WAR';
+         eventStr = 'BARBARIAN WAR<br><font color="red">Open Shield';
          break;
       case 'clean':
          eventStr = 'RESOURCE CLEAN UP';
