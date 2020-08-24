@@ -230,7 +230,7 @@ function exeCmd() {
 function onCickCopy(){
    var language = localStorage.getItem("language");
    if(language=="zh"){
-   swal('老区活动表', '<br><a href="https://tieba.baidu.com/p/5520296574">【183-飞鸟】最详细的走心攻略</a><br><a href="https://cantgis.gitlab.io/ymsd-new">【新区每日活动表】</a><br><a href="https://tieba.baidu.com/p/5782383071">【野蛮时代赛季伙伴天梯图-热度榜】</a><br><img src="img/WechatIMG.jpeg" width="200" height="200" /><br><font color="#FF0000">长按图片-识别二维码感谢支持!</font>');
+   swal('老区活动表', '<br><a href="https://tieba.baidu.com/p/5520296574">【183-飞鸟】最详细的走心攻略</a><br><a href="https://cantgis.gitlab.io/ymsd-new">【新区每日活动表】</a><br><img src="img/WechatIMG.jpeg" width="200" height="200" /><br><font color="#FF0000">长按图片-识别二维码感谢支持!</font>');
    } else{
    swal('Releases', 'Author:597-Cat<br>Daily Events Timetable.<br><a href="https://www.facebook.com/groups/BrutalAge">Brutal Age Events&Partner Discussion Groups</a><br><a href="https://cantgis.gitlab.io/ymsd-new">【New Server Daily Events Timetable】</a><br><a href="https://www.facebook.com/BrutalAgeEvents">【Partner Ladder Diagram - Strength List】</a><br>Add WeChat Enter The Partner Group<br><img src="img/PayPal.jpeg" width="200" height="250" /><br>Contact Wechat：Cantgis'); 
    } 
