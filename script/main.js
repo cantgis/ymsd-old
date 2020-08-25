@@ -63,18 +63,35 @@ function exeCmd() {
         for (var _time = 0; _time < 6; _time++) {
             var day = _day;
             var time
-            // UTC-3 修复加拿大东部
+            // console.log("_time", _time);
+            // UTC-3 修复加拿大东北部-格陵兰
             if (eventOffset == 0&&remain == 2){
                 time = _time + eventOffset + 1;
             }
-            // UTC-10 修复夏威夷
+            // UTC-12 修复国际变更线西
+            else if (eventOffset == 3&&remain == 0) {
+                time = _time + eventOffset;
+            }
+            // UTC-10 修复夏威夷(檀香山)
             else if (eventOffset == 2&&remain == 2) {
                 time = _time + eventOffset +1;
             }
+            // UTC-9 修复世界协调时（阿拉斯加）
+            else if (eventOffset == 2&&remain == 1) {
+                time = _time + eventOffset;
+            }
+            // UTC-8 修复世界协调时 加拿大美国西部
+            else if (eventOffset == 2&&remain == 0) {
+                time = _time + eventOffset;
+            }
             // UTC-6 修复中部事件(美国和加拿大)//目前事件时间快两个小时
             else if (eventOffset == 1&&remain == 1) {
-                time = _time + eventOffset +1;
+                time = _time  + eventOffset +1;
             }  
+            // UTC-4 修复大西洋时间(加拉斯加)
+            else if (eventOffset == 0&&remain == 3) {
+                time = _time + eventOffset +1;
+            } 
             else if (eventOffset < 2) {
                 time = _time + eventOffset;
             } 
