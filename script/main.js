@@ -63,9 +63,25 @@ function exeCmd() {
         for (var _time = 0; _time < 6; _time++) {
             var day = _day;
             var time
-            if (eventOffset < 2) {
+            // UTC-3 修复加拿大东部
+            if (eventOffset == 0&&remain == 2){
+                time = _time + eventOffset + 1;
+            }
+            // UTC-10 修复夏威夷
+            else if (eventOffset == 2&&remain == 2) {
+                time = _time + eventOffset +1;
+            }
+            // UTC-6 修复中部事件(美国和加拿大)//目前事件时间快两个小时
+            else if (eventOffset == 1&&remain == 1) {
+                time = _time + eventOffset +1;
+            }  
+            else if (eventOffset < 2) {
                 time = _time + eventOffset;
-            } else {
+            } 
+            // if (eventOffset < 2) {
+            //     time = _time + eventOffset;
+            // } 
+            else {
                 time = _time + eventOffset + 1;
             }
             
