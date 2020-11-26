@@ -3,9 +3,9 @@
 # 野蛮时代 每日活动时间表
 Daily Events Timetable for BA
 ``` 
-[野蛮时代-活动时间表老区]: https://cantgis.github.io/ymsd-old/
+[野蛮时代-活动时间表老区](old.usit.cn)
 
-[野蛮时代-活动时间表新区]: https://cantgis.github.io/ymsd-new/
+[野蛮时代-活动时间表新区](new.usit.cn)
 ```
 
 ## 细节-Detail
