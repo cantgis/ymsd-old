@@ -124,9 +124,9 @@ function exeCmd() {
     // timeRow.html(timeRow.html() + '<td>英文</td>');
     var language = localStorage.getItem("language");
     if (language == "zh") {
-        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >EN<br><font color="black">(597-Cat)</td>');
+        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >EN<br><font color="black">(群座)</td>');
     } else {
-        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >中文<br><font color="black">(597-Cat)</td>');
+        timeRow.html(timeRow.html() + '<td data="changelang" style="font-weight:bold;color:red" >中文<br><font color="black">(群座)</td>');
     }
 
 
@@ -244,9 +244,9 @@ function exeCmd() {
    var copyRow = $('#sss');
    var language = localStorage.getItem("language");
    if(language=="zh"){
-      copyRow.html(copyRow.html() + '<td colspan="7" id="copy"><font color="#000000"><strong>老区</strong></font>(<font color="#FF0000">597-Cat</font>)</td>');
+      copyRow.html(copyRow.html() + '<td colspan="7" id="copy"><font color="#000000"><strong>老区</strong></font>(<font color="#FF0000">群座</font>)</td>');
    } else{
-      copyRow.html(copyRow.html() + '<td colspan="7" id="copy"><font color="#000000"><strong>OldServer</strong></font>(<font color="#FF0000">597-Cat</font>)</td>');   
+      copyRow.html(copyRow.html() + '<td colspan="7" id="copy"><font color="#000000"><strong>OldServer</strong></font>(<font color="#FF0000">群座</font>)</td>');   
    } 
    // copyRow.html(copyRow.html() + '<td colspan="3">☚扫码进微信群</td>');
 
@@ -265,7 +265,7 @@ function onCickCopy(){
    if(language=="zh"){
    swal('老区活动表', '<br><a href="https://tieba.baidu.com/p/5520296574">最详细的走心攻略</a><br><a href="https://new.usit.cn">【新区每日活动表】</a><br><img src="img/WechatIMG.jpeg" width="200" height="200" /><br><font color="#FF0000">长按图片-识别二维码感谢支持!</font>');
    } else{
-   swal('Releases', 'Author:597-Cat<br>Daily Events Timetable.<br><a href="https://www.facebook.com/groups/BrutalAge">Brutal Age Events&Partner Discussion Groups</a><br><a href="https://new.usit.cn">【New Server Daily Events Timetable】</a><br><a href="https://www.facebook.com/BrutalAgeEvents">【Partner Ladder Diagram - Strength List】</a><br>Add WeChat Enter The Partner Group<br><img src="img/PayPal.jpeg" width="200" height="250" /><br>Contact Wechat：Cantgis'); 
+   swal('Releases', 'Author:群座<br>Daily Events Timetable.<br><a href="https://www.facebook.com/groups/BrutalAge">Brutal Age Events&Partner Discussion Groups</a><br><a href="https://new.usit.cn">【New Server Daily Events Timetable】</a><br><a href="https://www.facebook.com/BrutalAgeEvents">【Partner Ladder Diagram - Strength List】</a><br>Add WeChat Enter The Partner Group<br><img src="img/PayPal.jpeg" width="200" height="250" /><br>Contact Wechat：Cantgis'); 
    } 
 
 };
